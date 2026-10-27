@@ -3,6 +3,7 @@ import { Link, NavLink, Route, Routes, useNavigate, useParams, useSearchParams }
 import { ArrowLeft, ArrowRight, ArrowUpRight, Bath, BedDouble, CarFront, MapPin, Menu, MessageCircle, Ruler, Search, X } from 'lucide-react';
 import { listings, money, type Listing } from './data/listings';
 import { CONTACT, whatsappLink } from './lib/contact';
+import Seo from './components/Seo';
 
 function ContactButton({label,message}:{label:string;message:string}) {
   return <a className="ctn-btn" href={whatsappLink(message)}><MessageCircle size={17}/>{label}<ArrowUpRight size={16}/></a>;
@@ -82,4 +83,4 @@ function Detail(){
  <div className="detail-grid"><div><div className="specs"><span><Ruler/> {item.area} m²</span><span><BedDouble/> {item.beds} quartos</span><span><Bath/> {item.baths} banheiros</span><span><CarFront/> {item.parking} vagas</span></div><h2>Sobre este imóvel</h2><p>{item.description}</p><h2>Características</h2><div className="features">{item.features.map(f=><span key={f}>{f}</span>)}</div><p className="demo">{demo}</p>{item.sourceUrl&&<a className="underlined dark" href={item.sourceUrl} target="_blank" rel="noopener noreferrer">Ver anúncio na origem <ArrowUpRight size={17}/></a>}</div>
  <aside className="lead"><p className="kicker">ATENDIMENTO PESSOAL</p><h2>Gostou deste imóvel?</h2><p>Converse diretamente com Maria Clara e tire suas dúvidas.</p><ContactButton label="Tenho interesse" message={'Olá, Maria Clara! Tenho interesse no imóvel '+item.title+' ('+item.id+').'}/></aside></div></main>;
 }
-export default function App(){return <><Header/><Routes><Route path="/" element={<Home/>}/><Route path="/imoveis" element={<Catalog/>}/><Route path="/imovel/:id" element={<Detail/>}/><Route path="*" element={<div className="wrap page"><h1>Página não encontrada</h1><Link to="/">Voltar ao início</Link></div>}/></Routes><Footer/></>;}
+export default function App(){return <><Seo/><Header/><Routes><Route path="/" element={<Home/>}/><Route path="/imoveis" element={<Catalog/>}/><Route path="/imovel/:id" element={<Detail/>}/><Route path="*" element={<div className="wrap page"><h1>Página não encontrada</h1><Link to="/">Voltar ao início</Link></div>}/></Routes><Footer/></>;}
