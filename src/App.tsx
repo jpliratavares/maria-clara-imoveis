@@ -40,9 +40,13 @@ function SearchPanel(){
 }
 const demo='Imagens, preços e imóveis ilustrativos — catálogo de demonstração.';
 function Home(){
- return <><section className="hero"><div className="hero-bg"/><div className="wrap hero-inner"><p className="kicker light">IMÓVEIS EM JOÃO PESSOA E REGIÃO</p>
- <h1>O lugar certo<br/>para a sua <em>próxima</em><br/>história.</h1><p className="hero-sub">Comprar ou alugar pode ser simples. Descubra imóveis com orientação próxima, atenção aos detalhes e tranquilidade em cada escolha.</p>
- <Link className="underlined" to="/imoveis">Explore os imóveis <ArrowUpRight size={19}/></Link></div></section>
+ return <><section className="hero hero-personal"><div className="wrap hero-personal-grid"><div className="hero-personal-copy">
+ <p className="kicker">MUITO PRAZER, SOU</p>
+ <h1>Maria Clara<br/><em>Andrade França.</em></h1>
+ <p className="hero-role">Corretora de imóveis independente · João Pessoa e região</p>
+ <p className="hero-sub">Acredito que encontrar um imóvel vai muito além de escolher um endereço. Meu compromisso é oferecer um atendimento próximo, transparente e atento ao que faz sentido para você.</p>
+ <div className="hero-actions"><a className="ctn-btn" href="#sobre">Conheça meu trabalho <ArrowRight size={17}/></a><Link className="underlined dark" to="/imoveis">Ver imóveis <ArrowUpRight size={18}/></Link></div>
+ </div><div className="hero-personal-visual"><div className="portrait-frame"><img src="/maria-clara-perfil.jpg" alt="Retrato profissional de Maria Clara Andrade França" onError={e=>{e.currentTarget.style.display='none'}}/><div className="portrait-placeholder"><span>MC.</span><small>Espaço reservado para a fotografia profissional de Maria Clara</small></div></div><div className="portrait-caption"><span>ATENDIMENTO PESSOAL</span><span>JOÃO PESSOA · PB</span></div></div></div></section>
  <div className="wrap search-offset"><SearchPanel/></div>
  <section className="wrap section"><div className="section-head"><div><p className="kicker">SELEÇÃO DE IMÓVEIS</p><h2>Espaços para viver novas histórias.</h2><p>Conheça opções para diferentes momentos e estilos de vida.</p></div><Link className="underlined dark" to="/imoveis">Ver todos os imóveis <ArrowUpRight size={17}/></Link></div>
  <div className="listing-grid">{listings.filter(x=>x.featured).map(item=><ListingCard key={item.id} item={item}/>)}</div><p className="demo">{demo}</p></section>
