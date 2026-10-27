@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react';
 import { Link, NavLink, Route, Routes, useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, ArrowUpRight, Bath, BedDouble, CarFront, MapPin, Menu, MessageCircle, Ruler, Search, X } from 'lucide-react';
 import { listings, money, type Listing } from './data/listings';
-import { CONTACT, whatsappLink } from './lib/contact';
+import { whatsappLink } from './lib/contact';
 import Seo from './components/Seo';
 
 function ContactButton({label,message}:{label:string;message:string}) {
@@ -23,7 +23,7 @@ function Header(){
   </div></header>;
 }
 function Footer(){
-  return <footer className="footer"><div className="wrap footer-top"><div><h2>MARIA CLARA<span className="accent">.</span></h2><p>Imóveis e novas possibilidades em João Pessoa e região.</p></div><div><Link to="/imoveis">Explorar imóveis</Link><a href="/#sobre">Sobre</a><a href="/#contato">Contato</a></div></div><div className="wrap footer-bottom"><span>© {new Date().getFullYear()} Maria Clara Andrade França</span><span>{CONTACT.creci?'CRECI '+CONTACT.creci:'CRECI a informar antes da publicação'}</span></div></footer>;
+  return <footer className="footer"><div className="wrap footer-top"><div><h2>MARIA CLARA<span className="accent">.</span></h2><p>Imóveis e novas possibilidades em João Pessoa e região.</p></div><div><Link to="/imoveis">Explorar imóveis</Link><a href="/#sobre">Sobre</a><a href="/#contato">Contato</a></div></div><div className="wrap footer-bottom"><span>© {new Date().getFullYear()} Maria Clara Andrade França</span></div></footer>;
 }
 function ListingCard({item}:{item:Listing}){
   return <Link className="listing" to={'/imovel/'+item.id}><div className="listing-photo">{item.images[0]&&<img src={item.images[0]} alt={'Foto do imóvel '+item.title} loading="lazy"/>}<b>{item.deal}</b></div>
@@ -47,7 +47,7 @@ function Home(){
  return <><section className="hero hero-personal"><div className="wrap hero-personal-grid"><div className="hero-personal-copy">
  <p className="kicker">MUITO PRAZER, SOU</p>
  <h1>Maria Clara<br/><em>Andrade França.</em></h1>
- <p className="hero-role">Corretora de imóveis independente · João Pessoa e região</p>
+ <p className="hero-role">Imóveis em João Pessoa e região</p>
  <p className="hero-sub">Acredito que encontrar um imóvel vai muito além de escolher um endereço. Meu compromisso é oferecer um atendimento próximo, transparente e atento ao que faz sentido para você.</p>
  <div className="hero-actions"><a className="ctn-btn" href="#sobre">Conheça meu trabalho <ArrowRight size={17}/></a><Link className="underlined dark" to="/imoveis">Ver imóveis <ArrowUpRight size={18}/></Link></div>
  </div><div className="hero-personal-visual"><div className="portrait-frame"><img src={`${import.meta.env.BASE_URL}sorriso-frontal.jpeg`} alt="Maria Clara Andrade França sorrindo" loading="eager" fetchPriority="high"/><div className="portrait-placeholder"><span>MC.</span><small>Espaço reservado para a fotografia profissional de Maria Clara</small></div></div><div className="portrait-caption"><span>ATENDIMENTO PESSOAL</span><span>JOÃO PESSOA · PB</span></div></div></div></section>
@@ -57,7 +57,7 @@ function Home(){
  {listings.length ? <div className="listing-grid">{listings.filter(x=>x.featured).map(item=><ListingCard key={item.id} item={item}/>)}</div> : <div className="empty"><h3>Imóveis em atualização</h3><p>Enquanto organizamos o catálogo, consulte os anúncios publicados na fonte.</p><a className="ctn-btn" href={CHAVES_NA_MAO_URL} target="_blank" rel="noopener noreferrer">Ver anúncios no Chaves na Mão <ArrowUpRight size={17}/></a></div>}<p className="demo">{demo}</p></section>
  <section className="about" id="sobre"><div className="wrap about-grid"><div className="about-image"><img src={`${import.meta.env.BASE_URL}olhar-lateral.jpeg`} alt="Retrato profissional de Maria Clara Andrade França" loading="lazy"/></div>
  <div><p className="kicker">PRAZER, MARIA CLARA</p><h2>Mais que imóveis.<br/><em>Conexões reais.</em></h2>
- <p>Sou Maria Clara Andrade França, corretora de imóveis independente, com atuação em João Pessoa e região.</p><p>Minha proposta é oferecer uma experiência objetiva, humana e personalizada para quem deseja comprar, vender ou alugar um imóvel.</p>
+ <p>Sou Maria Clara Andrade França e atuo com atendimento no mercado imobiliário de João Pessoa e região.</p><p>Minha proposta é oferecer uma experiência objetiva, humana e personalizada para quem deseja comprar, vender ou alugar um imóvel.</p>
  <ContactButton label="Vamos conversar" message="Olá, Maria Clara! Gostaria de saber mais sobre seus serviços."/></div></div></section>
  <section className="wrap section" id="contato"><div className="contact-band"><div><p className="kicker light">VAMOS CONVERSAR?</p><h2>Seu próximo endereço<br/>começa com uma conversa.</h2><p>Conte o que você procura. Vamos encontrar o caminho juntos.</p></div><ContactButton label="Entrar em contato" message="Olá, Maria Clara! Quero conversar sobre imóveis."/></div></section></>;
 }
