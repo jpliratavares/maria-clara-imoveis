@@ -6,14 +6,14 @@ import SnakeGame from './components/SnakeGame';
 function Home() {
   return <>
     <header className="header"><div className="wrap header-row">
-      <Link className="logo" to="/"><span>MC<span className="accent">.</span></span><small>MARIA CLARA<br/>ANDRADE FRANÇA</small></Link>
+      <Link className="logo" to="/"><span>MC<span className="accent">.</span></span><small>MARIA CLARA<br/>ANDRADE</small></Link>
       <nav className="nav"><a href="#sobre">Sobre mim</a><a href="#trajetoria">Trajetória</a><Link to="/jogo">Joguinho</Link></nav>
     </div></header>
     <main>
       <section className="hero hero-personal"><div className="wrap hero-personal-grid">
         <div className="hero-personal-copy">
           <p className="kicker">MUITO PRAZER, SOU</p>
-          <h1>Maria Clara<br/><em>Andrade França.</em></h1>
+          <h1>Maria Clara<br/><em>Andrade.</em></h1>
           <p className="hero-role">Minha trajetória no mercado imobiliário</p>
           <p className="hero-sub">Acredito no valor de ouvir, aprender e construir relações de confiança. Este é um espaço para compartilhar um pouco da minha história e da minha formação.</p>
           <div className="hero-actions"><a className="ctn-btn" href="#sobre">Conheça minha história <ArrowRight size={17}/></a></div>
@@ -23,7 +23,7 @@ function Home() {
       <section className="about" id="sobre"><div className="wrap about-grid">
         <div className="about-image"><img src={`${import.meta.env.BASE_URL}olhar-lateral.jpeg`} alt="Maria Clara Andrade França em retrato profissional" loading="lazy"/></div>
         <div><p className="kicker">UM POUCO SOBRE MIM</p><h2>Mais que imóveis.<br/><em>Conexões reais.</em></h2>
-          <p>Sou Maria Clara Andrade França. Tenho experiência no ambiente imobiliário de João Pessoa e região e sigo investindo na minha formação profissional.</p>
+          <p>Sou Maria Clara Andrade. Tenho experiência no ambiente imobiliário de João Pessoa e região e sigo investindo na minha formação profissional.</p>
           <p>Valorizo uma comunicação clara, o cuidado com as pessoas e o aprendizado contínuo. Quero construir uma trajetória pautada pela responsabilidade e pela confiança.</p>
         </div>
       </div></section>
@@ -33,7 +33,7 @@ function Home() {
       </section>
       <section className="wrap section" style={{paddingTop:0}}><p className="kicker">NOVIDADES EM CONSTRUÇÃO</p><h2>Enquanto isso, uma pausa para jogar.</h2><p>Um clássico da cobrinha com um toque especial.</p><Link className="construction-link" to="/jogo">Jogar cobrinha <ArrowRight size={17}/></Link></section>
     </main>
-    <footer className="footer"><div className="wrap footer-top"><div><h2>MARIA CLARA<span className="accent">.</span></h2><p>Portfólio pessoal · João Pessoa e região.</p></div><div><a href="#sobre">Sobre mim</a><a href="#trajetoria">Trajetória</a></div></div><div className="wrap footer-bottom"><span>© {new Date().getFullYear()} Maria Clara Andrade França</span><span>Portfólio pessoal</span></div></footer>
+    <footer className="footer"><div className="wrap footer-top"><div><h2>MARIA CLARA<span className="accent">.</span></h2><p>Portfólio pessoal · João Pessoa e região.</p></div><div><a href="#sobre">Sobre mim</a><a href="#trajetoria">Trajetória</a></div></div><div className="wrap footer-bottom"><span>© {new Date().getFullYear()} Maria Clara Andrade</span><span>Portfólio pessoal</span></div></footer>
   </>;
 }
 export default function App(){return <><Seo/><Routes><Route path="/" element={<Home/>}/><Route path="/jogo" element={<SnakeGame/>}/><Route path="*" element={<Home/>}/></Routes></>;}
