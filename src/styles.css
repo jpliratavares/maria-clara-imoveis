@@ -22,3 +22,18 @@
 .portrait-caption{display:flex;justify-content:space-between;gap:12px;padding-top:18px;font:700 10px Manrope;letter-spacing:1.5px;color:#67806d}
 @media(max-width:950px){.hero-personal-grid{gap:4%}.hero-personal h1{font-size:clamp(40px,5vw,65px)}}
 @media(max-width:650px){.hero-personal{min-height:auto;padding:53px 0 75px}.hero-personal-grid{grid-template-columns:1fr;gap:42px}.hero-personal h1{font-size:clamp(40px,10vw,59px);letter-spacing:-2px}.hero-personal-visual{justify-self:center;max-width:420px}.portrait-frame{aspect-ratio:5/5.7}.hero-actions{gap:23px}.hero-personal .hero-sub{font-size:14px}}
+
+/* Referências editoriais de portfólios reais: composição sóbria, sem mídia sintética */
+.portal-section{display:grid;grid-template-columns:1.35fr .75fr;gap:65px;align-items:center;padding:85px 0 40px}
+.portal-section h2{font:650 clamp(30px,3.3vw,43px)/1.2 Manrope;letter-spacing:-1.8px;max-width:650px;margin:22px 0}
+.portal-section p:not(.kicker){color:#718276;line-height:1.9;max-width:670px;font-size:14px}
+.portal-section .ctn-btn{margin-top:18px}
+.portal-aside{background:#eaf0e9;padding:38px;min-height:240px;display:flex;flex-direction:column;justify-content:center;gap:14px}
+.portal-aside span{font:800 10px Manrope;letter-spacing:2px;color:#64816d}
+.portal-aside strong{font:650 23px/1.4 Manrope;letter-spacing:-.7px}
+.portal-aside small{color:#6f8173;line-height:1.7}
+.portfolio-banner{display:flex;justify-content:space-between;align-items:center;gap:22px;padding:27px 30px;margin-top:34px;background:#ecf2eb}
+.portfolio-banner strong{font:750 15px Manrope}
+.portfolio-banner p{font-size:12px;color:#647e6a;line-height:1.7;margin:8px 0 0}
+.portfolio-banner a{display:flex;align-items:center;gap:8px;white-space:nowrap;font-weight:700;font-size:12px;text-decoration:underline;text-underline-offset:5px}
+@media(max-width:650px){.portal-section{grid-template-columns:1fr;gap:24px;padding:72px 0 38px}.portal-aside{min-height:170px;padding:25px}.portfolio-banner{flex-direction:column;align-items:start;padding:22px}.portfolio-banner a{white-space:normal}}
