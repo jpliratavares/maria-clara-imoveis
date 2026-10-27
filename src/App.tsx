@@ -39,6 +39,9 @@ function SearchPanel(){
     <button onClick={submit}><Search size={18}/>Buscar imóveis<ArrowRight size={17}/></button></div>;
 }
 const demo='Imagens, preços e imóveis ilustrativos — catálogo de demonstração.';
+const CHAVES_NA_MAO_URL = 'https://www.chavesnamao.com.br/corretor/clau-negocios-e-gestao/id-1283063/';
+function PortfolioListings(){return <section className="wrap portal-section"><div><p className="kicker">CARTEIRA DE IMÓVEIS</p><h2>Imóveis para conhecer, histórias para começar.</h2><p>Consulte os anúncios do perfil Clau Negócios e Gestão no Chaves na Mão. Preços e disponibilidade devem ser confirmados no portal de origem.</p><a className="ctn-btn" href={CHAVES_NA_MAO_URL} target="_blank" rel="noopener noreferrer">Explorar anúncios publicados <ArrowUpRight size={17}/></a></div><div className="portal-aside"><span>CHAVES NA MÃO</span><strong>Veja os imóveis anunciados no perfil.</strong><small>Você será direcionado ao portal para ver informações e fotografias originais.</small></div></section>}
+
 function Home(){
  return <><section className="hero hero-personal"><div className="wrap hero-personal-grid"><div className="hero-personal-copy">
  <p className="kicker">MUITO PRAZER, SOU</p>
@@ -47,6 +50,7 @@ function Home(){
  <p className="hero-sub">Acredito que encontrar um imóvel vai muito além de escolher um endereço. Meu compromisso é oferecer um atendimento próximo, transparente e atento ao que faz sentido para você.</p>
  <div className="hero-actions"><a className="ctn-btn" href="#sobre">Conheça meu trabalho <ArrowRight size={17}/></a><Link className="underlined dark" to="/imoveis">Ver imóveis <ArrowUpRight size={18}/></Link></div>
  </div><div className="hero-personal-visual"><div className="portrait-frame"><img src="/maria-clara-perfil.jpg" alt="Retrato profissional de Maria Clara Andrade França" onError={e=>{e.currentTarget.style.display='none'}}/><div className="portrait-placeholder"><span>MC.</span><small>Espaço reservado para a fotografia profissional de Maria Clara</small></div></div><div className="portrait-caption"><span>ATENDIMENTO PESSOAL</span><span>JOÃO PESSOA · PB</span></div></div></div></section>
+ <PortfolioListings/>
  <div className="wrap search-offset"><SearchPanel/></div>
  <section className="wrap section"><div className="section-head"><div><p className="kicker">SELEÇÃO DE IMÓVEIS</p><h2>Espaços para viver novas histórias.</h2><p>Conheça opções para diferentes momentos e estilos de vida.</p></div><Link className="underlined dark" to="/imoveis">Ver todos os imóveis <ArrowUpRight size={17}/></Link></div>
  <div className="listing-grid">{listings.filter(x=>x.featured).map(item=><ListingCard key={item.id} item={item}/>)}</div><p className="demo">{demo}</p></section>
@@ -61,6 +65,7 @@ function Catalog(){
  function setFilter(key:string,value:string){const p=new URLSearchParams(params);value?p.set(key,value):p.delete(key);setParams(p);}
  const shown=useMemo(()=>{const items=listings.filter(x=>(!deal||x.deal===deal)&&(!type||x.type===type)&&(!city||x.city===city));return sort==='menor'?items.sort((a,b)=>a.price-b.price):sort==='maior'?items.sort((a,b)=>b.price-a.price):items;},[deal,type,city,sort]);
  return <main className="wrap page"><p className="kicker">NOSSO CATÁLOGO</p><h1>Encontre seu <em>lugar.</em></h1><p>Explore possibilidades de compra e locação em João Pessoa e região.</p>
+ <div className="portfolio-banner"><div><strong>Anúncios publicados no Chaves na Mão</strong><p>Acesse o perfil Clau Negócios e Gestão para conferir os anúncios. O catálogo abaixo contém dados demonstrativos.</p></div><a href={CHAVES_NA_MAO_URL} target="_blank" rel="noopener noreferrer">Ver anúncios reais <ArrowUpRight size={16}/></a></div>
  <div className="filters"><label>Finalidade<select value={deal} onChange={e=>setFilter('finalidade',e.target.value)}><option value="">Todas</option><option>Venda</option><option>Aluguel</option></select></label>
  <label>Tipo<select value={type} onChange={e=>setFilter('tipo',e.target.value)}><option value="">Todos</option><option>Apartamento</option><option>Casa</option><option>Studio</option></select></label>
  <label>Cidade<select value={city} onChange={e=>setFilter('cidade',e.target.value)}><option value="">Todas</option><option>João Pessoa</option><option>Cabedelo</option></select></label>
