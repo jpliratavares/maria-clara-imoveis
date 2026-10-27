@@ -28,3 +28,7 @@ O site referencia duas fotos reais, que devem ser adicionadas em `public/images/
 - `olhar-lateral.jpeg` — retrato na seção “Sobre Maria Clara”.
 
 **As imagens ainda não estão neste repositório**. Faça upload dos JPEGs para esses caminhos antes de executar ou publicar o site. O pacote de imagens otimizado foi entregue separadamente nesta conversa.
+
+## Apresentação profissional
+
+Maria Clara atua no setor imobiliário e está em processo de formação para obter o CRECI. Até a regularização, evitar afirmações de habilitação profissional, oferta de corretagem independente ou promessas de intermediação em nome próprio. Publicar apenas anúncios com autorização e identificação do responsável habilitado quando aplicável. Revisar a comunicação antes do lançamento público.
