@@ -13,7 +13,7 @@ function Home() {
       <section className="hero hero-personal"><div className="wrap hero-personal-grid">
         <div className="hero-personal-copy">
           <p className="kicker">MUITO PRAZER, SOU</p>
-          <h1>Maria Clara<br/><em>Andrade.</em></h1>
+          <h1>Maria Clara<br/><em>França.</em></h1>
           <p className="hero-role">Minha trajetória no mercado imobiliário</p>
           <p className="hero-sub">Acredito no valor de ouvir, aprender e construir relações de confiança. Este é um espaço para compartilhar um pouco da minha história e da minha formação.</p>
           <div className="hero-actions"><a className="ctn-btn" href="#sobre">Conheça minha história <ArrowRight size={17}/></a></div>
