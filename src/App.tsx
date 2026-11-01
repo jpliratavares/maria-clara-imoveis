@@ -97,7 +97,7 @@ function Home() {
         <div className="hero-personal-visual"><div className="portrait-frame"><img src={`${import.meta.env.BASE_URL}retrato-preto-e-branco.jpeg`} onError={(event) => { event.currentTarget.onerror = null; event.currentTarget.src = `${import.meta.env.BASE_URL}sorriso-frontal.jpeg`; }} alt="Maria Clara Andrade em retrato pessoal preto e branco" loading="eager"/></div><div className="portrait-caption"><span>PORTFÓLIO PESSOAL</span><span>JOÃO PESSOA · PB</span></div></div>
       </div></section>
       <section className="about" id="sobre"><div className="wrap about-grid">
-        <div className="about-image"><img src={`${import.meta.env.BASE_URL}sorriso-frontal.jpeg`} alt="Maria Clara Andrade França em retrato profissional" loading="lazy"/></div>
+        <div className="about-image"><img src={`${import.meta.env.BASE_URL}olhar-lateral.jpeg`} alt="Retrato lateral de Maria Clara Andrade França" loading="lazy"/></div>
         <div><p className="kicker">UM POUCO SOBRE MIM</p><h2>Comunicação, escuta<br/><em>e propósito social.</em></h2>
           <p>Sou Maria Clara Andrade França. Atualmente, curso Gestão Pública e trabalho como social media. Minha trajetória acadêmica também inclui estudos em Direito até o 7º período e Relações Internacionais até o 3º.</p>
           <p>Realizei estágios em delegacia e produção publicitária, experiências que ampliaram minha visão sobre instituições, pessoas e comunicação. Hoje, meu interesse por causas sociais é uma motivação importante para seguir estudando Gestão Pública.</p>
