@@ -1,5 +1,6 @@
+import { useState } from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
-import { ArrowRight, ArrowUpRight, BookOpen, BriefcaseBusiness, HeartHandshake, Landmark, Megaphone, Scale, Sparkles, Globe2 } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, BookOpen, BriefcaseBusiness, HeartHandshake, Landmark, Megaphone, Scale, Sparkles, Globe2, Menu, X } from 'lucide-react';
 import Seo from './components/Seo';
 import SnakeGame from './components/SnakeGame';
 
@@ -80,10 +81,11 @@ function Trajectory() {
 }
 
 function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return <>
     <header className="header"><div className="wrap header-row">
       <Link className="logo" to="/"><span>MC<span className="accent">.</span></span><small>MARIA CLARA<br/>ANDRADE</small></Link>
-      <nav className="nav"><a href="#sobre">Sobre mim</a><a href="#trajetoria">Trajetória</a><Link to="/jogo">Clara Run</Link></nav>
+      <button className="mobile-nav-toggle" type="button" aria-label={menuOpen ? "Fechar menu" : "Abrir menu"} aria-expanded={menuOpen} aria-controls="primary-navigation" onClick={() => setMenuOpen(open => !open)}>{menuOpen ? <X size={24}/> : <Menu size={24}/>}</button><nav id="primary-navigation" className={`nav${menuOpen ? " open" : ""}`}><a href="#sobre" onClick={() => setMenuOpen(false)}>Sobre mim</a><a href="#trajetoria" onClick={() => setMenuOpen(false)}>Trajetória</a><Link to="/jogo" onClick={() => setMenuOpen(false)}>Clara Run</Link></nav>
     </div></header>
     <main>
       <section className="hero hero-personal"><div className="wrap hero-personal-grid">
