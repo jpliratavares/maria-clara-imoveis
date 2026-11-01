@@ -83,7 +83,7 @@ function Home() {
   return <>
     <header className="header"><div className="wrap header-row">
       <Link className="logo" to="/"><span>MC<span className="accent">.</span></span><small>MARIA CLARA<br/>ANDRADE</small></Link>
-      <nav className="nav"><a href="#sobre">Sobre mim</a><a href="#trajetoria">Trajetória</a><Link to="/jogo">Joguinho</Link></nav>
+      <nav className="nav"><a href="#sobre">Sobre mim</a><a href="#trajetoria">Trajetória</a><Link to="/jogo">Clara Run</Link></nav>
     </div></header>
     <main>
       <section className="hero hero-personal"><div className="wrap hero-personal-grid">
@@ -108,7 +108,7 @@ function Home() {
         <div className="purpose-photo"><img src={`${import.meta.env.BASE_URL}foto-balanco.jpeg`} onError={(event) => { event.currentTarget.onerror = null; event.currentTarget.src = `${import.meta.env.BASE_URL}olhar-lateral.jpeg`; }} alt="Maria Clara em um balanço ao ar livre" loading="lazy"/></div><div className="purpose-copy"><p className="kicker light">PROPÓSITO</p><h2 id="purpose-title">Acredito em uma sociedade<br/><em>mais humana.</em></h2><p>As causas sociais são parte do que me motiva a seguir aprendendo. É por isso que escolhi estudar Gestão Pública: quero compreender como as instituições e as políticas públicas podem contribuir para uma sociedade que escute, acolha e respeite mais as pessoas.</p><span className="purpose-signature">Maria Clara Andrade</span></div>
       </div></section>
       <Trajectory/>
-      <section className="wrap section" style={{paddingTop:0}}><p className="kicker">NOVIDADES EM CONSTRUÇÃO</p><h2>Enquanto isso, uma pausa para jogar.</h2><p>Um clássico da cobrinha com um toque especial.</p><Link className="construction-link" to="/jogo">Jogar cobrinha <ArrowRight size={17}/></Link></section>
+      <section className="wrap section" style={{paddingTop:0}}><p className="kicker">NOVIDADES EM CONSTRUÇÃO</p><h2>Uma pausa para jogar Clara Run.</h2><p>Uma aventura pixelada inspirada no jogo do dinossauro, com a Clara como protagonista.</p><Link className="construction-link" to="/jogo">Jogar Clara Run <ArrowRight size={17}/></Link></section>
     </main>
     <footer className="footer"><div className="wrap footer-top"><div><h2>MARIA CLARA<span className="accent">.</span></h2><p>Comunicação, estratégia e trajetória profissional · João Pessoa e região.</p></div><div><a href="#sobre">Sobre mim</a><a href="#trajetoria">Trajetória</a></div></div><div className="wrap footer-bottom"><span>© {new Date().getFullYear()} Maria Clara Andrade</span><span>Portfólio pessoal</span></div></footer>
   </>;
