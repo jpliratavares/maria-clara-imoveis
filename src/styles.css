@@ -79,3 +79,16 @@
 .trajectory-outro a{display:flex;align-items:center;gap:7px;white-space:nowrap;font:700 12px Manrope;border-bottom:1px solid currentColor;padding-bottom:7px}
 @media(max-width:900px){.trajectory-layout{grid-template-columns:150px minmax(0,1fr);gap:35px}.trajectory-heading{gap:5%}.trajectory-rail strong{font-size:90px}}
 @media(max-width:700px){.trajectory-section{padding:75px 0}.trajectory-heading{display:block;padding-bottom:38px}.trajectory-heading h2{font-size:clamp(35px,8vw,48px);letter-spacing:-1.8px}.trajectory-heading>p{margin-top:23px}.trajectory-layout{display:block;padding-top:42px}.trajectory-rail{display:none}.trajectory-list{margin-left:20px;padding-left:16px}.trajectory-item{padding-left:23px;padding-bottom:38px}.trajectory-node{left:-38px;width:38px;height:38px;box-shadow:0 0 0 6px #f7f9f5}.trajectory-node svg{width:18px}.trajectory-content{padding-bottom:34px}.trajectory-content h3{font-size:24px}.trajectory-meta{font-size:9px;gap:9px}.trajectory-outro{margin-top:45px;padding:23px;flex-wrap:wrap}.trajectory-outro a{margin-left:40px}}
+
+
+/* Propósito pessoal: causas sociais como eixo da formação em Gestão Pública */
+.purpose-section{background:#1e3b2c;color:#f4f7f1;padding:95px 0 100px;overflow:hidden}
+.purpose-layout{display:grid;grid-template-columns:225px minmax(0,1fr);gap:8%;align-items:start}
+.purpose-mark{display:flex;flex-direction:column;align-items:flex-start;gap:23px;color:#c4dac6;border-top:1px solid #53715b;padding-top:28px}
+.purpose-mark span{font:800 10px Manrope;letter-spacing:2px}
+.purpose-copy{max-width:840px}
+.purpose-copy h2{font:600 clamp(36px,5.1vw,69px)/1.15 Manrope;letter-spacing:-3px;margin:24px 0 30px}
+.purpose-copy h2 em{font:400 1em Georgia,serif;color:#b5cdb8}
+.purpose-copy>p:not(.kicker){font-size:16px;line-height:1.95;color:#c4d3c6;max-width:680px;margin:0}
+.purpose-signature{display:block;margin-top:35px;padding-top:23px;border-top:1px solid #486550;font:500 17px Georgia,serif;font-style:italic;color:#d8e5d8}
+@media(max-width:700px){.purpose-section{padding:65px 0 75px}.purpose-layout{grid-template-columns:1fr;gap:32px}.purpose-mark{flex-direction:row;align-items:center;gap:15px;padding-top:18px}.purpose-mark svg{width:28px}.purpose-copy h2{font-size:clamp(35px,8.8vw,49px);letter-spacing:-1.8px}.purpose-copy>p:not(.kicker){font-size:14px}}
