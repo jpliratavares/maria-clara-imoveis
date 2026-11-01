@@ -1,5 +1,5 @@
 import { Link, Route, Routes } from 'react-router-dom';
-import { ArrowRight, ArrowUpRight, BookOpen, BriefcaseBusiness, Landmark, Megaphone, Scale, Sparkles, Globe2 } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, BookOpen, BriefcaseBusiness, HeartHandshake, Landmark, Megaphone, Scale, Sparkles, Globe2 } from 'lucide-react';
 import Seo from './components/Seo';
 import SnakeGame from './components/SnakeGame';
 
@@ -13,17 +13,17 @@ const trajectory = [
     current: true
   },
   {
-    stage: 'EXPERIÊNCIA PROFISSIONAL',
-    title: 'Produção publicitária',
+    stage: 'ESTÁGIO PROFISSIONAL',
+    title: 'Estágio em produção publicitária',
     icon: Sparkles,
-    description: 'A experiência com produção publicitária faz parte do meu repertório em comunicação, ampliando minha visão sobre linguagem, apresentação de ideias e construção de mensagens.',
+    description: 'Durante meu estágio em produção publicitária, tive contato com a área de comunicação e com diferentes formas de construir e apresentar mensagens. Essa vivência integra o repertório que levo para minha atuação atual.',
     skills: ['Produção publicitária', 'Linguagem', 'Comunicação']
   },
   {
-    stage: 'VIVÊNCIA NA ÁREA JURÍDICA',
-    title: 'Experiência em delegacia',
+    stage: 'ESTÁGIO NA ÁREA JURÍDICA',
+    title: 'Estágio em delegacia',
     icon: Scale,
-    description: 'Minha passagem por uma delegacia integra minha trajetória profissional e me proporcionou contato com a rotina de um ambiente institucional ligado à área jurídica.',
+    description: 'Meu estágio em uma delegacia me aproximou do cotidiano de uma instituição pública ligada à área jurídica. Essa experiência faz parte do caminho que despertou meu interesse pelas instituições e por seu papel na sociedade.',
     skills: ['Ambiente institucional', 'Área jurídica', 'Rotinas profissionais']
   },
   {
@@ -44,8 +44,8 @@ const trajectory = [
     stage: 'FORMAÇÃO EM ANDAMENTO',
     title: 'Graduação em Gestão Pública',
     icon: Landmark,
-    description: 'Atualmente curso Gestão Pública, dando continuidade à minha formação e ao interesse por gestão, instituições e atuação na sociedade.',
-    skills: ['Gestão Pública', 'Formação em andamento'],
+    description: 'Hoje, as causas sociais são uma das principais motivações da minha trajetória. Estudo Gestão Pública com o desejo de compreender melhor as políticas públicas e contribuir, no futuro, para uma sociedade mais humana e justa.',
+    skills: ['Gestão Pública', 'Causas sociais', 'Políticas públicas'],
     current: true
   }
 ];
@@ -55,7 +55,7 @@ function Trajectory() {
     <div className="wrap">
       <div className="trajectory-heading">
         <div><p className="kicker">MINHA TRAJETÓRIA</p><h2 id="trajectory-title">Caminhos diferentes.<br/><em>Uma identidade.</em></h2></div>
-        <p>Minha formação e minhas experiências se cruzam entre comunicação, Direito, Relações Internacionais e Gestão Pública. Cada etapa acrescenta uma perspectiva ao trabalho que desenvolvo hoje.</p>
+        <p>Minha formação e meus estágios passam pela comunicação, pelo Direito e pelas Relações Internacionais. Hoje, a Gestão Pública representa meu desejo de aproximar conhecimento, causas sociais e transformação humana.</p>
       </div>
       <div className="trajectory-layout">
         <div className="trajectory-rail" aria-hidden="true"><span>EXPERIÊNCIAS & FORMAÇÃO</span><strong>{String(trajectory.length).padStart(2,'0')}</strong><p>Frentes que compõem minha trajetória profissional e acadêmica.</p></div>
@@ -74,7 +74,7 @@ function Trajectory() {
           })}
         </ol>
       </div>
-      <div className="trajectory-outro"><BriefcaseBusiness size={21} strokeWidth={1.6}/><div><strong>Uma trajetória em construção</strong><p>As experiências estão apresentadas por área, sem datas ou cargos não confirmados. Este site é um portfólio pessoal e não oferece intermediação imobiliária.</p></div><a href="#sobre" aria-label="Voltar à apresentação">Sobre mim <ArrowUpRight size={16}/></a></div>
+      <div className="trajectory-outro"><BriefcaseBusiness size={21} strokeWidth={1.6}/><div><strong>Uma trajetória em construção</strong><p>As experiências estão apresentadas por área, sem datas não confirmadas. Os trabalhos na delegacia e em produção publicitária foram estágios. Este site é um portfólio pessoal e não oferece intermediação imobiliária.</p></div><a href="#sobre" aria-label="Voltar à apresentação">Sobre mim <ArrowUpRight size={16}/></a></div>
     </div>
   </section>;
 }
@@ -91,17 +91,21 @@ function Home() {
           <p className="kicker">MUITO PRAZER, SOU</p>
           <h1>Maria Clara<br/><em>Andrade.</em></h1>
           <p className="hero-role">Gestão Pública em formação · Social Media</p>
-          <p className="hero-sub">Estudo Gestão Pública, cursei Direito até o 7º período e Relações Internacionais até o 3º. Tenho experiência em delegacia e produção publicitária. Hoje, atuo como social media, conectando comunicação, criatividade e estratégia.</p>
+          <p className="hero-sub">Sou social media e estudante de Gestão Pública, movida pelo interesse em causas sociais e pelo desejo de contribuir para uma sociedade mais humana. Minha trajetória inclui estudos em Direito e Relações Internacionais e estágios em delegacia e produção publicitária.</p>
           <div className="hero-actions"><a className="ctn-btn" href="#sobre">Conheça minha história <ArrowRight size={17}/></a></div>
         </div>
         <div className="hero-personal-visual"><div className="portrait-frame"><img src={`${import.meta.env.BASE_URL}sorriso-frontal.jpeg`} alt="Retrato de Maria Clara Andrade França" loading="eager"/></div><div className="portrait-caption"><span>PORTFÓLIO PESSOAL</span><span>JOÃO PESSOA · PB</span></div></div>
       </div></section>
       <section className="about" id="sobre"><div className="wrap about-grid">
         <div className="about-image"><img src={`${import.meta.env.BASE_URL}olhar-lateral.jpeg`} alt="Maria Clara Andrade França em retrato profissional" loading="lazy"/></div>
-        <div><p className="kicker">UM POUCO SOBRE MIM</p><h2>Comunicação com propósito.<br/><em>Conexões reais.</em></h2>
+        <div><p className="kicker">UM POUCO SOBRE MIM</p><h2>Comunicação, escuta<br/><em>e propósito social.</em></h2>
           <p>Sou Maria Clara Andrade França. Atualmente, curso Gestão Pública e trabalho como social media. Minha trajetória acadêmica também inclui estudos em Direito até o 7º período e Relações Internacionais até o 3º.</p>
-          <p>Minha experiência profissional passa por uma delegacia e pela produção publicitária. Essas vivências contribuíram para minha forma de comunicar, compreender contextos e desenvolver projetos com responsabilidade.</p>
+          <p>Realizei estágios em delegacia e produção publicitária, experiências que ampliaram minha visão sobre instituições, pessoas e comunicação. Hoje, meu interesse por causas sociais é uma motivação importante para seguir estudando Gestão Pública.</p>
         </div>
+      </div></section>
+      <section className="purpose-section" aria-labelledby="purpose-title"><div className="wrap purpose-layout">
+        <div className="purpose-mark"><HeartHandshake size={35} strokeWidth={1.25}/><span>O QUE ME MOVE</span></div>
+        <div className="purpose-copy"><p className="kicker light">PROPÓSITO</p><h2 id="purpose-title">Acredito em uma sociedade<br/><em>mais humana.</em></h2><p>As causas sociais são parte do que me motiva a seguir aprendendo. É por isso que escolhi estudar Gestão Pública: quero compreender como as instituições e as políticas públicas podem contribuir para uma sociedade que escute, acolha e respeite mais as pessoas.</p><span className="purpose-signature">Maria Clara Andrade</span></div>
       </div></section>
       <Trajectory/>
       <section className="wrap section" style={{paddingTop:0}}><p className="kicker">NOVIDADES EM CONSTRUÇÃO</p><h2>Enquanto isso, uma pausa para jogar.</h2><p>Um clássico da cobrinha com um toque especial.</p><Link className="construction-link" to="/jogo">Jogar cobrinha <ArrowRight size={17}/></Link></section>
