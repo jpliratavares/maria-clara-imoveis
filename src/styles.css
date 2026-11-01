@@ -152,3 +152,16 @@
  .dino-bottom button{padding:15px 10px;font-size:12px}
  .dino-footnote{line-height:1.6}
 }
+
+
+/* Mobile navigation: hidden until explicitly toggled; prevent overlaying hero */
+.mobile-nav-toggle{display:none;background:transparent;border:1px solid #d7e2d8;color:#234232;border-radius:6px;align-items:center;justify-content:center;width:44px;height:44px;padding:0}
+@media(max-width:700px){
+ .header .header-row{height:76px}
+ .header .mobile-nav-toggle{display:flex;margin-left:auto;flex-shrink:0}
+ .header .nav{display:none;position:absolute;top:100%;left:0;right:0;background:#fafaf8;flex-direction:column;gap:0;padding:8px 20px 16px;box-shadow:0 14px 25px #14271a1a;border-top:1px solid #e7eee7}
+ .header .nav.open{display:flex}
+ .header .nav a{display:block;padding:15px 8px;min-height:48px;font-size:15px;border-bottom:1px solid #e7eee7}
+ .header .nav a:last-child{border-bottom:0}
+ .hero-personal{padding-top:52px}
+}
