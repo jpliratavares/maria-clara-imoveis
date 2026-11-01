@@ -94,10 +94,10 @@ function Home() {
           <p className="hero-sub">Sou social media e estudante de Gestão Pública, movida pelo interesse em causas sociais e pelo desejo de contribuir para uma sociedade mais humana. Minha trajetória inclui estudos em Direito e Relações Internacionais e estágios em delegacia e produção publicitária.</p>
           <div className="hero-actions"><a className="ctn-btn" href="#sobre">Conheça minha história <ArrowRight size={17}/></a></div>
         </div>
-        <div className="hero-personal-visual"><div className="portrait-frame"><img src={`${import.meta.env.BASE_URL}sorriso-frontal.jpeg`} alt="Retrato de Maria Clara Andrade França" loading="eager"/></div><div className="portrait-caption"><span>PORTFÓLIO PESSOAL</span><span>JOÃO PESSOA · PB</span></div></div>
+        <div className="hero-personal-visual"><div className="portrait-frame"><img src={`${import.meta.env.BASE_URL}retrato-preto-e-branco.jpeg`} onError={(event) => { event.currentTarget.onerror = null; event.currentTarget.src = `${import.meta.env.BASE_URL}sorriso-frontal.jpeg`; }} alt="Maria Clara Andrade em retrato pessoal preto e branco" loading="eager"/></div><div className="portrait-caption"><span>PORTFÓLIO PESSOAL</span><span>JOÃO PESSOA · PB</span></div></div>
       </div></section>
       <section className="about" id="sobre"><div className="wrap about-grid">
-        <div className="about-image"><img src={`${import.meta.env.BASE_URL}olhar-lateral.jpeg`} alt="Maria Clara Andrade França em retrato profissional" loading="lazy"/></div>
+        <div className="about-image"><img src={`${import.meta.env.BASE_URL}sorriso-frontal.jpeg`} alt="Maria Clara Andrade França em retrato profissional" loading="lazy"/></div>
         <div><p className="kicker">UM POUCO SOBRE MIM</p><h2>Comunicação, escuta<br/><em>e propósito social.</em></h2>
           <p>Sou Maria Clara Andrade França. Atualmente, curso Gestão Pública e trabalho como social media. Minha trajetória acadêmica também inclui estudos em Direito até o 7º período e Relações Internacionais até o 3º.</p>
           <p>Realizei estágios em delegacia e produção publicitária, experiências que ampliaram minha visão sobre instituições, pessoas e comunicação. Hoje, meu interesse por causas sociais é uma motivação importante para seguir estudando Gestão Pública.</p>
@@ -105,7 +105,7 @@ function Home() {
       </div></section>
       <section className="purpose-section" aria-labelledby="purpose-title"><div className="wrap purpose-layout">
         <div className="purpose-mark"><HeartHandshake size={35} strokeWidth={1.25}/><span>O QUE ME MOVE</span></div>
-        <div className="purpose-copy"><p className="kicker light">PROPÓSITO</p><h2 id="purpose-title">Acredito em uma sociedade<br/><em>mais humana.</em></h2><p>As causas sociais são parte do que me motiva a seguir aprendendo. É por isso que escolhi estudar Gestão Pública: quero compreender como as instituições e as políticas públicas podem contribuir para uma sociedade que escute, acolha e respeite mais as pessoas.</p><span className="purpose-signature">Maria Clara Andrade</span></div>
+        <div className="purpose-photo"><img src={`${import.meta.env.BASE_URL}foto-balanco.jpeg`} onError={(event) => { event.currentTarget.onerror = null; event.currentTarget.src = `${import.meta.env.BASE_URL}olhar-lateral.jpeg`; }} alt="Maria Clara em um balanço ao ar livre" loading="lazy"/></div><div className="purpose-copy"><p className="kicker light">PROPÓSITO</p><h2 id="purpose-title">Acredito em uma sociedade<br/><em>mais humana.</em></h2><p>As causas sociais são parte do que me motiva a seguir aprendendo. É por isso que escolhi estudar Gestão Pública: quero compreender como as instituições e as políticas públicas podem contribuir para uma sociedade que escute, acolha e respeite mais as pessoas.</p><span className="purpose-signature">Maria Clara Andrade</span></div>
       </div></section>
       <Trajectory/>
       <section className="wrap section" style={{paddingTop:0}}><p className="kicker">NOVIDADES EM CONSTRUÇÃO</p><h2>Enquanto isso, uma pausa para jogar.</h2><p>Um clássico da cobrinha com um toque especial.</p><Link className="construction-link" to="/jogo">Jogar cobrinha <ArrowRight size={17}/></Link></section>
