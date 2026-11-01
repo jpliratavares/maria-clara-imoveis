@@ -92,3 +92,15 @@
 .purpose-copy>p:not(.kicker){font-size:16px;line-height:1.95;color:#c4d3c6;max-width:680px;margin:0}
 .purpose-signature{display:block;margin-top:35px;padding-top:23px;border-top:1px solid #486550;font:500 17px Georgia,serif;font-style:italic;color:#d8e5d8}
 @media(max-width:700px){.purpose-section{padding:65px 0 75px}.purpose-layout{grid-template-columns:1fr;gap:32px}.purpose-mark{flex-direction:row;align-items:center;gap:15px;padding-top:18px}.purpose-mark svg{width:28px}.purpose-copy h2{font-size:clamp(35px,8.8vw,49px);letter-spacing:-1.8px}.purpose-copy>p:not(.kicker){font-size:14px}}
+
+
+/* Distribuição editorial das fotografias: hero P&B, sobre retrato, propósito balanço */
+.purpose-layout{grid-template-columns:135px minmax(220px,340px) minmax(0,1fr);gap:clamp(24px,3.5vw,52px);align-items:center}
+.purpose-mark{align-self:start}
+.purpose-photo{width:100%;height:100%;min-height:440px;max-height:550px;overflow:hidden;align-self:stretch}
+.purpose-photo img{width:100%;height:100%;object-fit:cover;object-position:center center}
+.purpose-copy h2{font-size:clamp(32px,3.7vw,58px);letter-spacing:-2.2px}
+.purpose-copy>p:not(.kicker){font-size:15px}
+@media(max-width:1080px){.purpose-layout{grid-template-columns:95px minmax(180px,300px) minmax(0,1fr);gap:24px}.purpose-copy h2{font-size:clamp(30px,3.7vw,48px)}}
+@media(max-width:800px){.purpose-layout{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:26px}.purpose-mark{grid-column:1/-1;flex-direction:row;align-items:center;gap:14px;padding-top:15px}.purpose-photo{min-height:370px}.purpose-copy h2{font-size:clamp(30px,4.5vw,42px)}}
+@media(max-width:600px){.purpose-layout{display:flex;flex-direction:column;align-items:stretch;gap:28px}.purpose-photo{height:380px;min-height:0;max-height:none}.purpose-copy h2{font-size:clamp(34px,8vw,45px)}}
