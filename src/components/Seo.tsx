@@ -6,7 +6,7 @@ export default function Seo(){
  useEffect(()=>{
   const game=pathname==='/jogo';
   const title=game?'Jogo da cobrinha | Maria Clara Andrade França':'Maria Clara Andrade | Social Media e Gestão Pública';
-  const description=game?'Um minigame de cobrinha no portfólio pessoal de Maria Clara Andrade França.':'Conheça Maria Clara Andrade França: social media, estudante de Gestão Pública, com estudos em Direito e experiência em delegacia e produção publicitária.';
+  const description=game?'Um minigame de cobrinha no portfólio pessoal de Maria Clara Andrade França.':'Conheça Maria Clara Andrade França: social media, estudante de Gestão Pública, com estudos em Direito e Relações Internacionais e experiência em delegacia e produção publicitária.';
   document.title=title;
   const values:[string,'name'|'property',string,string][]=[
    ['meta[name="description"]','name','description',description],
