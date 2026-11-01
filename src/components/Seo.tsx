@@ -5,8 +5,8 @@ export default function Seo(){
  const {pathname}=useLocation();
  useEffect(()=>{
   const game=pathname==='/jogo';
-  const title=game?'Jogo da cobrinha | Maria Clara Andrade França':'Maria Clara Andrade | Social Media e Gestão Pública';
-  const description=game?'Um minigame de cobrinha no portfólio pessoal de Maria Clara Andrade França.':'Conheça Maria Clara Andrade França: social media, estudante de Gestão Pública, com estudos em Direito e Relações Internacionais, estágios em delegacia e produção publicitária e interesse em causas sociais.';
+  const title=game?'Clara Run | Jogo pixelado de Maria Clara Andrade':'Maria Clara Andrade | Social Media e Gestão Pública';
+  const description=game?'Clara Run: jogo de corrida e salto com uma protagonista pixelada inspirado no dinossauro do navegador.':'Conheça Maria Clara Andrade França: social media, estudante de Gestão Pública, com estudos em Direito e Relações Internacionais, estágios em delegacia e produção publicitária e interesse em causas sociais.';
   document.title=title;
   const values:[string,'name'|'property',string,string][]=[
    ['meta[name="description"]','name','description',description],
