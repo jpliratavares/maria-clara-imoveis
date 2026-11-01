@@ -104,3 +104,30 @@
 @media(max-width:1080px){.purpose-layout{grid-template-columns:95px minmax(180px,300px) minmax(0,1fr);gap:24px}.purpose-copy h2{font-size:clamp(30px,3.7vw,48px)}}
 @media(max-width:800px){.purpose-layout{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:26px}.purpose-mark{grid-column:1/-1;flex-direction:row;align-items:center;gap:14px;padding-top:15px}.purpose-photo{min-height:370px}.purpose-copy h2{font-size:clamp(30px,4.5vw,42px)}}
 @media(max-width:600px){.purpose-layout{display:flex;flex-direction:column;align-items:stretch;gap:28px}.purpose-photo{height:380px;min-height:0;max-height:none}.purpose-copy h2{font-size:clamp(34px,8vw,45px)}}
+
+
+/* Clara Run — endless runner pixel art */
+.dino-page{padding-top:38px;padding-bottom:100px;min-height:80vh}
+.dino-intro{text-align:center;max-width:650px;margin:40px auto 45px}
+.dino-intro .kicker{justify-content:center}
+.dino-intro h1{font:700 clamp(48px,7vw,88px)/1.1 Manrope;letter-spacing:-4px;margin:18px 0}
+.dino-intro h1 em{font:400 1em Georgia,serif;color:#668571}
+.dino-intro>p:not(.kicker){font-size:15px;color:#718579;line-height:1.8}
+.dino-shell{border:1px solid #d4e1d4;background:#f3f5ed;box-shadow:0 22px 60px #1b362318;max-width:960px;margin:0 auto}
+.dino-hud{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:19px 24px;color:#2a4c36;font:700 13px monospace;letter-spacing:1px}
+.dino-hud small{font-size:10px;color:#829987;margin-left:10px}
+.dino-hud strong{font-size:17px}
+.dino-best{margin-left:24px;color:#819788}
+.dino-stage{position:relative;touch-action:manipulation;cursor:pointer}
+.dino-stage canvas{display:block;width:100%;height:auto;image-rendering:pixelated}
+.dino-overlay{position:absolute;inset:0;display:grid;place-items:center;background:#f3f5ed99;backdrop-filter:blur(1px)}
+.dino-overlay-card{text-align:center;background:#f8faf4ed;border:1px solid #c8d9ca;padding:25px 35px;max-width:90%;box-shadow:0 14px 38px #173c2718}
+.dino-overline{font:800 10px Manrope;letter-spacing:1.6px;color:#668775}
+.dino-overlay-card h2{font:700 clamp(25px,4vw,40px) Manrope;margin:10px 0}
+.dino-overlay-card p{color:#728676;font-size:13px;line-height:1.7}
+.dino-overlay-card button,.dino-bottom button{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;background:#294d36;color:#fff;font:700 12px Manrope;padding:13px 20px;margin-top:8px}
+.dino-bottom{display:flex;align-items:center;gap:10px;border-top:1px solid #d6e2d6;padding:13px 22px}
+.dino-bottom>span{margin-right:auto;color:#668372;font:700 11px monospace;letter-spacing:1px}
+.dino-bottom button:last-child{background:transparent;border:1px solid #a7bea9;color:#2d5139}
+.dino-footnote{text-align:center;color:#87988b;font-size:12px;margin-top:23px}
+@media(max-width:650px){.dino-page{padding-top:20px}.dino-intro{margin:35px auto}.dino-hud{padding:13px;font-size:10px}.dino-hud small{display:none}.dino-hud strong{font-size:13px}.dino-best{margin-left:8px}.dino-overlay-card{padding:15px 18px}.dino-overlay-card h2{font-size:24px}.dino-overlay-card p{font-size:11px}.dino-bottom{padding:12px;flex-wrap:wrap}.dino-bottom>span{width:100%;text-align:center}.dino-bottom button{flex:1}.dino-intro h1{letter-spacing:-2px}}
