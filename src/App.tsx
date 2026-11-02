@@ -75,7 +75,7 @@ function Trajectory() {
           })}
         </ol>
       </div>
-      <div className="trajectory-outro"><BriefcaseBusiness size={21} strokeWidth={1.6}/><div><strong>Uma trajetória em construção</strong><p>As experiências estão apresentadas por área, sem datas não confirmadas. Os trabalhos na delegacia e em produção publicitária foram estágios. Este site é um portfólio pessoal e não oferece intermediação imobiliária.</p></div><a href="#sobre" aria-label="Voltar à apresentação">Sobre mim <ArrowUpRight size={16}/></a></div>
+      <div className="trajectory-outro"><BriefcaseBusiness size={21} strokeWidth={1.6}/><div><strong>Uma trajetória em construção</strong><p>As experiências estão apresentadas por área, sem datas não confirmadas. Os trabalhos na delegacia e em produção publicitária foram estágios.</p></div><a href="#sobre" aria-label="Voltar à apresentação">Sobre mim <ArrowUpRight size={16}/></a></div>
     </div>
   </section>;
 }
