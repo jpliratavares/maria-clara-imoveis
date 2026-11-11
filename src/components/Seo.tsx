@@ -5,8 +5,8 @@ export default function Seo(){
  const {pathname}=useLocation();
  useEffect(()=>{
   const game=pathname==='/jogo';
-  const title=game?'Clara Run | Jogo pixelado de Maria Clara Andrade':'Maria Clara Andrade | Social Media e Gestão Pública';
-  const description=game?'Clara Run: jogo de corrida e salto com uma protagonista pixelada inspirado no dinossauro do navegador.':'Conheça Maria Clara Andrade França: social media, estudante de Gestão Pública, com estudos em Direito e Relações Internacionais, estágios em delegacia e produção publicitária e interesse em causas sociais.';
+  const title=game?'Clara Run | Jogo pixelado de Maria Clara Andrade':'Maria Clara Andrade | Social Media, Marketing e Copywriting';
+  const description=game?'Clara Run: jogo de corrida e salto com uma protagonista pixelada inspirado no dinossauro do navegador.':'Conheça Maria Clara Andrade França: experiência em social media, marketing, copywriting, atendimento, administração e área comercial, com estudos em Direito, Relações Internacionais e Produção Publicitária.';
   document.title=title;
   const values:[string,'name'|'property',string,string][]=[
    ['meta[name="description"]','name','description',description],
