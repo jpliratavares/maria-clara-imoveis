@@ -5,50 +5,15 @@ import Seo from './components/Seo';
 import SnakeGame from './components/SnakeGame';
 
 const trajectory = [
-  {
-    stage: 'ATUAÇÃO ATUAL',
-    title: 'Social media & comunicação digital',
-    icon: Megaphone,
-    description: 'Hoje, minha atuação profissional está ligada à comunicação digital. É onde reúno criatividade, produção de conteúdo e a busca por uma comunicação clara e relevante.',
-    skills: ['Comunicação digital', 'Conteúdo', 'Criatividade'],
-    current: true
-  },
-  {
-    stage: 'ESTÁGIO PROFISSIONAL',
-    title: 'Estágio em produção publicitária',
-    icon: Sparkles,
-    description: 'Durante meu estágio em produção publicitária, tive contato com a área de comunicação e com diferentes formas de construir e apresentar mensagens. Essa vivência integra o repertório que levo para minha atuação atual.',
-    skills: ['Produção publicitária', 'Linguagem', 'Comunicação']
-  },
-  {
-    stage: 'ESTÁGIO NA ÁREA JURÍDICA',
-    title: 'Estágio em delegacia',
-    icon: Scale,
-    description: 'Meu estágio em uma delegacia me aproximou do cotidiano de uma instituição pública ligada à área jurídica. Essa experiência faz parte do caminho que despertou meu interesse pelas instituições e por seu papel na sociedade.',
-    skills: ['Ambiente institucional', 'Área jurídica', 'Rotinas profissionais']
-  },
-  {
-    stage: 'FORMAÇÃO ACADÊMICA',
-    title: 'Direito — estudos até o 7º período',
-    icon: BookOpen,
-    description: 'Cursei Direito até o sétimo período. Essa etapa acadêmica faz parte da minha formação e contribuiu para meu interesse por instituições e relações sociais.',
-    skills: ['Estudos jurídicos', 'Formação acadêmica']
-  },
-  {
-    stage: 'FORMAÇÃO ACADÊMICA',
-    title: 'Relações Internacionais — estudos até o 3º período',
-    icon: Globe2,
-    description: 'Também cursei Relações Internacionais até o terceiro período. Essa experiência integra minha formação acadêmica e ampliou meu contato com temas ligados às relações entre sociedades e instituições.',
-    skills: ['Relações Internacionais', 'Formação acadêmica']
-  },
-  {
-    stage: 'FORMAÇÃO EM ANDAMENTO',
-    title: 'Graduação em Gestão Pública',
-    icon: Landmark,
-    description: 'Hoje, as causas sociais são uma das principais motivações da minha trajetória. Estudo Gestão Pública com o desejo de compreender melhor as políticas públicas e contribuir, no futuro, para uma sociedade mais humana e justa.',
-    skills: ['Gestão Pública', 'Causas sociais', 'Políticas públicas'],
-    current: true
-  }
+  {stage:'ATUAÇÃO PROFISSIONAL',title:'Social media, marketing e copywriting',icon:Megaphone,description:'Experiência em comunicação digital para salão de beleza, clínica de harmonização orofacial, policlínica e loja de assistência técnica e acessórios. Criação de conteúdo, textos publicitários, stories e atendimento por WhatsApp.',skills:['Social media','Copywriting','Canva Pro','CapCut'],current:true},
+  {stage:'EXPERIÊNCIA COMERCIAL',title:'SDR — Clau Negócios e Gestão',icon:BriefcaseBusiness,description:'Atuação em desenvolvimento de relacionamento comercial e prospecção como SDR.',skills:['Comunicação','Relacionamento comercial']},
+  {stage:'ATENDIMENTO',title:'Recepção e secretaria — SOS Unhas',icon:HeartHandshake,description:'Experiência em recepção, organização e atendimento ao público.',skills:['Atendimento','Organização']},
+  {stage:'2025',title:'Auxiliar administrativo — CTV Construtora / CAGEPA',icon:Landmark,description:'Atuação administrativa na CTV Construtora, prestadora de serviços à CAGEPA.',skills:['Rotinas administrativas','Documentação','Escritório']},
+  {stage:'2024',title:'Delegacia da Polícia Civil',icon:Scale,description:'Produção e entrega de documentos, atendimento ao público e atenção aos prazos e à qualidade dos registros.',skills:['Documentação','Atendimento ao público','Responsabilidade']},
+  {stage:'FORMAÇÃO ACADÊMICA',title:'Direito — UNIPÊ (2021–2024)',icon:BookOpen,description:'Estudos em Direito, sem indicação de graduação concluída no currículo.',skills:['Direito','Instituições']},
+  {stage:'FORMAÇÃO ACADÊMICA',title:'Relações Internacionais — Estácio',icon:Globe2,description:'Estudos em Relações Internacionais.',skills:['Relações Internacionais']},
+  {stage:'FORMAÇÃO ACADÊMICA',title:'Produção Publicitária — UNIESP',icon:Sparkles,description:'Estudos em Produção Publicitária, complementando a experiência prática em comunicação.',skills:['Publicidade','Comunicação']},
+  {stage:'FORMAÇÃO EM ANDAMENTO',title:'Gestão Pública',icon:Landmark,description:'Formação em Gestão Pública, conforme apresentação profissional já existente no portfólio.',skills:['Gestão Pública','Causas sociais'],current:true}
 ];
 
 function Trajectory() {
@@ -56,7 +21,7 @@ function Trajectory() {
     <div className="wrap">
       <div className="trajectory-heading">
         <div><p className="kicker">MINHA TRAJETÓRIA</p><h2 id="trajectory-title">Caminhos diferentes.<br/><em>Uma identidade.</em></h2></div>
-        <p>Minha formação e meus estágios passam pela comunicação, pelo Direito e pelas Relações Internacionais. Hoje, a Gestão Pública representa meu desejo de aproximar conhecimento, causas sociais e transformação humana.</p>
+        <p>Minha trajetória reúne comunicação digital, atendimento, rotinas administrativas e experiências institucionais. Também inclui estudos em Direito, Relações Internacionais, Produção Publicitária e Gestão Pública.</p>
       </div>
       <div className="trajectory-layout">
         <div className="trajectory-rail" aria-hidden="true"><span>EXPERIÊNCIAS & FORMAÇÃO</span><strong>{String(trajectory.length).padStart(2,'0')}</strong><p>Frentes que compõem minha trajetória profissional e acadêmica.</p></div>
@@ -75,7 +40,7 @@ function Trajectory() {
           })}
         </ol>
       </div>
-      <div className="trajectory-outro"><BriefcaseBusiness size={21} strokeWidth={1.6}/><div><strong>Uma trajetória em construção</strong><p>As experiências estão apresentadas por área, sem datas não confirmadas. Os trabalhos na delegacia e em produção publicitária foram estágios.</p></div><a href="#sobre" aria-label="Voltar à apresentação">Sobre mim <ArrowUpRight size={16}/></a></div>
+      <div className="trajectory-outro"><BriefcaseBusiness size={21} strokeWidth={1.6}/><div><strong>Uma trajetória em construção</strong><p>As experiências estão apresentadas com as datas informadas no currículo; as demais não receberam períodos presumidos.</p></div><a href="#sobre" aria-label="Voltar à apresentação">Sobre mim <ArrowUpRight size={16}/></a></div>
     </div>
   </section>;
 }
@@ -92,8 +57,8 @@ function Home() {
         <div className="hero-personal-copy">
           <p className="kicker">MUITO PRAZER, SOU</p>
           <h1>Maria Clara<br/><em>Andrade.</em></h1>
-          <p className="hero-role">Gestão Pública em formação · Social Media</p>
-          <p className="hero-sub">Sou social media e estudante de Gestão Pública, movida pelo interesse em causas sociais e pelo desejo de contribuir para uma sociedade mais humana. Minha trajetória inclui estudos em Direito e Relações Internacionais e estágios em delegacia e produção publicitária.</p>
+          <p className="hero-role">Social Media · Copywriting · Comunicação</p>
+          <p className="hero-sub">Atuo com social media, marketing e copywriting. Minha trajetória também passa pelo atendimento ao público, pela área administrativa e pela Polícia Civil, reunindo criatividade, organização e comunicação.</p>
           <div className="hero-actions"><a className="ctn-btn" href="#sobre">Conheça minha história <ArrowRight size={17}/></a></div>
         </div>
         <div className="hero-personal-visual"><div className="portrait-frame"><img src={`${import.meta.env.BASE_URL}retrato-preto-e-branco.jpeg`} onError={(event) => { event.currentTarget.onerror = null; event.currentTarget.src = `${import.meta.env.BASE_URL}sorriso-frontal.jpeg`; }} alt="Maria Clara Andrade em retrato pessoal preto e branco" loading="eager"/></div><div className="portrait-caption"><span>PORTFÓLIO PESSOAL</span><span>JOÃO PESSOA · PB</span></div></div>
@@ -101,8 +66,8 @@ function Home() {
       <section className="about" id="sobre"><div className="wrap about-grid">
         <div className="about-image"><img src={`${import.meta.env.BASE_URL}olhar-lateral.jpeg`} alt="Retrato lateral de Maria Clara Andrade França" loading="lazy"/></div>
         <div><p className="kicker">UM POUCO SOBRE MIM</p><h2>Comunicação, escuta<br/><em>e propósito social.</em></h2>
-          <p>Sou Maria Clara Andrade França. Atualmente, curso Gestão Pública e trabalho como social media. Minha trajetória acadêmica também inclui estudos em Direito até o 7º período e Relações Internacionais até o 3º.</p>
-          <p>Realizei estágios em delegacia e produção publicitária, experiências que ampliaram minha visão sobre instituições, pessoas e comunicação. Hoje, meu interesse por causas sociais é uma motivação importante para seguir estudando Gestão Pública.</p>
+          <p>Sou Maria Clara Andrade França. Trabalho com social media e marketing, incluindo produção de conteúdo, copywriting e comunicação para negócios de diferentes segmentos. Tenho experiência em atendimento, secretaria, atividades administrativas e desenvolvimento comercial.</p>
+          <p>Minha formação reúne estudos em Direito (UNIPÊ), Relações Internacionais (Estácio) e Produção Publicitária (UNIESP), além da formação em Gestão Pública já apresentada neste portfólio. Utilizo Canva Pro, CapCut e ferramentas do Microsoft Office. Falo português, inglês e espanhol intermediário.</p>
         </div>
       </div></section>
       <section className="purpose-section" aria-labelledby="purpose-title"><div className="wrap purpose-layout">
