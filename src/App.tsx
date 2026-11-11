@@ -5,7 +5,7 @@ import Seo from './components/Seo';
 import SnakeGame from './components/SnakeGame';
 
 const trajectory = [
-  {stage:'ATUAÇÃO PROFISSIONAL',title:'Social media, marketing e copywriting',icon:Megaphone,description:'Experiência em comunicação digital para salão de beleza, clínica de harmonização orofacial, policlínica e loja de assistência técnica e acessórios. Criação de conteúdo, textos publicitários, stories e atendimento por WhatsApp.',skills:['Social media','Copywriting','Canva Pro','CapCut'],current:true},
+  {stage:'ATUAÇÃO PROFISSIONAL',title:'Social media, marketing e copywriting',icon:Megaphone,description:'Experiência em design gráfico, comunicação digital e marketing para salão de beleza, clínica de harmonização orofacial, policlínica e loja de assistência técnica e acessórios. Criação de peças visuais, conteúdo, textos publicitários, stories e atendimento por WhatsApp, com uso de Canva, CapCut e pacote Adobe.',skills:['Design gráfico','Social media','Copywriting','Canva','CapCut','Pacote Adobe'],current:true},
   {stage:'EXPERIÊNCIA COMERCIAL',title:'SDR — Clau Negócios e Gestão',icon:BriefcaseBusiness,description:'Atuação em desenvolvimento de relacionamento comercial e prospecção como SDR.',skills:['Comunicação','Relacionamento comercial']},
   {stage:'ATENDIMENTO',title:'Recepção e secretaria — SOS Unhas',icon:HeartHandshake,description:'Experiência em recepção, organização e atendimento ao público.',skills:['Atendimento','Organização']},
   {stage:'2025',title:'Auxiliar administrativo — CTV Construtora / CAGEPA',icon:Landmark,description:'Atuação administrativa na CTV Construtora, prestadora de serviços à CAGEPA.',skills:['Rotinas administrativas','Documentação','Escritório']},
@@ -57,8 +57,8 @@ function Home() {
         <div className="hero-personal-copy">
           <p className="kicker">MUITO PRAZER, SOU</p>
           <h1>Maria Clara<br/><em>Andrade.</em></h1>
-          <p className="hero-role">Social Media · Copywriting · Comunicação</p>
-          <p className="hero-sub">Atuo com social media, marketing e copywriting. Minha trajetória também passa pelo atendimento ao público, pela área administrativa e pela Polícia Civil, reunindo criatividade, organização e comunicação.</p>
+          <p className="hero-role">Design Gráfico · Social Media · Marketing</p>
+          <p className="hero-sub">Atuo com design gráfico, social media, marketing e copywriting. Minha trajetória também passa pelo atendimento ao público, pela área administrativa e pela Polícia Civil, reunindo criatividade, organização e comunicação.</p>
           <div className="hero-actions"><a className="ctn-btn" href="#sobre">Conheça minha história <ArrowRight size={17}/></a></div>
         </div>
         <div className="hero-personal-visual"><div className="portrait-frame"><img src={`${import.meta.env.BASE_URL}retrato-preto-e-branco.jpeg`} onError={(event) => { event.currentTarget.onerror = null; event.currentTarget.src = `${import.meta.env.BASE_URL}sorriso-frontal.jpeg`; }} alt="Maria Clara Andrade em retrato pessoal preto e branco" loading="eager"/></div><div className="portrait-caption"><span>PORTFÓLIO PESSOAL</span><span>JOÃO PESSOA · PB</span></div></div>
@@ -66,8 +66,8 @@ function Home() {
       <section className="about" id="sobre"><div className="wrap about-grid">
         <div className="about-image"><img src={`${import.meta.env.BASE_URL}olhar-lateral.jpeg`} alt="Retrato lateral de Maria Clara Andrade França" loading="lazy"/></div>
         <div><p className="kicker">UM POUCO SOBRE MIM</p><h2>Comunicação, escuta<br/><em>e propósito social.</em></h2>
-          <p>Sou Maria Clara Andrade França. Trabalho com social media e marketing, incluindo produção de conteúdo, copywriting e comunicação para negócios de diferentes segmentos. Tenho experiência em atendimento, secretaria, atividades administrativas e desenvolvimento comercial.</p>
-          <p>Minha formação reúne estudos em Direito (UNIPÊ), Relações Internacionais (Estácio) e Produção Publicitária (UNIESP), além da formação em Gestão Pública já apresentada neste portfólio. Utilizo Canva Pro, CapCut e ferramentas do Microsoft Office. Falo português, inglês e espanhol intermediário.</p>
+          <p>Sou Maria Clara Andrade França. Trabalho com design gráfico, social media e marketing, incluindo criação de peças visuais, edição de conteúdo, copywriting e comunicação para negócios de diferentes segmentos. Tenho experiência em atendimento, secretaria, atividades administrativas e desenvolvimento comercial.</p>
+          <p>Minha formação reúne estudos em Direito (UNIPÊ), Relações Internacionais (Estácio) e Produção Publicitária (UNIESP), além da formação em Gestão Pública já apresentada neste portfólio. Utilizo Canva Pro, CapCut, pacote Adobe e ferramentas do Microsoft Office. Falo português, inglês e espanhol intermediário.</p>
         </div>
       </div></section>
       <section className="purpose-section" aria-labelledby="purpose-title"><div className="wrap purpose-layout">
