@@ -156,7 +156,7 @@
 
 /* Mobile navigation: hidden until explicitly toggled; prevent overlaying hero */
 .mobile-nav-toggle{display:none;background:transparent;border:1px solid #d7e2d8;color:#234232;border-radius:6px;align-items:center;justify-content:center;width:44px;height:44px;padding:0}
-@media(max-width:700px){
+@media(max-width:600px){
  .header .header-row{height:76px}
  .header .mobile-nav-toggle{display:flex;margin-left:auto;flex-shrink:0}
  .header .nav{display:none;position:absolute;top:100%;left:0;right:0;background:#fafaf8;flex-direction:column;gap:0;padding:8px 20px 16px;box-shadow:0 14px 25px #14271a1a;border-top:1px solid #e7eee7}
