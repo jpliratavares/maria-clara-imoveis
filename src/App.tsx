@@ -5,15 +5,16 @@ import Seo from './components/Seo';
 import SnakeGame from './components/SnakeGame';
 
 const trajectory = [
-  {stage:'ATUAÇÃO PROFISSIONAL',title:'Social media, marketing e copywriting',icon:Megaphone,description:'Experiência em design gráfico, comunicação digital e marketing para salão de beleza, clínica de harmonização orofacial, policlínica e loja de assistência técnica e acessórios. Criação de peças visuais, conteúdo, textos publicitários, stories e atendimento por WhatsApp, com uso de Canva, CapCut e pacote Adobe.',skills:['Design gráfico','Social media','Copywriting','Canva','CapCut','Pacote Adobe'],current:true},
-  {stage:'EXPERIÊNCIA COMERCIAL',title:'SDR — Clau Negócios e Gestão',icon:BriefcaseBusiness,description:'Atuação em desenvolvimento de relacionamento comercial e prospecção como SDR.',skills:['Comunicação','Relacionamento comercial']},
+   {stage:'FORMAÇÃO EM ANDAMENTO',title:'Gestão Pública',icon:Landmark,description:'Formação em Gestão Pública, conforme apresentação profissional já existente no portfólio.',skills:['Gestão Pública','Causas sociais'],current:true},
+  {stage:'ATUAÇÃO PROFISSIONAL',title:'Social media, marketing e copywriting',icon:Megaphone,description:'Experiência em comunicação digital para salão de beleza, clínica de harmonização orofacial, policlínica e loja de assistência técnica e acessórios. Criação de conteúdo, textos publicitários, stories e atendimento por WhatsApp.',skills:['Social media'],current:true},
+  {stage:'EXPERIÊNCIA EM RAMO IMOBILIARIO',title:'SDR — Clau Negócios e Gestão',icon:BriefcaseBusiness,description:'Atuação em desenvolvimento de relacionamento comercial e prospecção como SDR.',skills:['Comunicação','Relacionamento comercial']},
   {stage:'ATENDIMENTO',title:'Recepção e secretaria — SOS Unhas',icon:HeartHandshake,description:'Experiência em recepção, organização e atendimento ao público.',skills:['Atendimento','Organização']},
   {stage:'2025',title:'Auxiliar administrativo — CTV Construtora / CAGEPA',icon:Landmark,description:'Atuação administrativa na CTV Construtora, prestadora de serviços à CAGEPA.',skills:['Rotinas administrativas','Documentação','Escritório']},
   {stage:'2024',title:'Delegacia da Polícia Civil',icon:Scale,description:'Produção e entrega de documentos, atendimento ao público e atenção aos prazos e à qualidade dos registros.',skills:['Documentação','Atendimento ao público','Responsabilidade']},
   {stage:'FORMAÇÃO ACADÊMICA',title:'Direito — UNIPÊ (2021–2024)',icon:BookOpen,description:'Estudos em Direito, sem indicação de graduação concluída no currículo.',skills:['Direito','Instituições']},
   {stage:'FORMAÇÃO ACADÊMICA',title:'Relações Internacionais — Estácio',icon:Globe2,description:'Estudos em Relações Internacionais.',skills:['Relações Internacionais']},
   {stage:'FORMAÇÃO ACADÊMICA',title:'Produção Publicitária — UNIESP',icon:Sparkles,description:'Estudos em Produção Publicitária, complementando a experiência prática em comunicação.',skills:['Publicidade','Comunicação']},
-  {stage:'FORMAÇÃO EM ANDAMENTO',title:'Gestão Pública',icon:Landmark,description:'Formação em Gestão Pública, conforme apresentação profissional já existente no portfólio.',skills:['Gestão Pública','Causas sociais'],current:true}
+ 
 ];
 
 function Trajectory() {
@@ -49,7 +50,7 @@ function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   return <>
     <header className="header"><div className="wrap header-row">
-      <Link className="logo" to="/"><span>MC<span className="accent">.</span></span><small>MARIA CLARA<br/>ANDRADE</small></Link>
+      <Link className="logo" to="/"><span>MC<span className="accent">A.</span></span><small>MARIA CLARA<br/>ANDRADE</small></Link>
       <button className="mobile-nav-toggle" type="button" aria-label={menuOpen ? "Fechar menu" : "Abrir menu"} aria-expanded={menuOpen} aria-controls="primary-navigation" onClick={() => setMenuOpen(open => !open)}>{menuOpen ? <X size={24}/> : <Menu size={24}/>}</button><nav id="primary-navigation" className={`nav${menuOpen ? " open" : ""}`}><a href="#sobre" onClick={() => setMenuOpen(false)}>Sobre mim</a><a href="#trajetoria" onClick={() => setMenuOpen(false)}>Trajetória</a><Link to="/jogo" onClick={() => setMenuOpen(false)}>Clara Run</Link></nav>
     </div></header>
     <main>
@@ -66,9 +67,8 @@ function Home() {
       <section className="about" id="sobre"><div className="wrap about-grid">
         <div className="about-image"><img src={`${import.meta.env.BASE_URL}olhar-lateral.jpeg`} alt="Retrato lateral de Maria Clara Andrade França" loading="lazy"/></div>
         <div><p className="kicker">UM POUCO SOBRE MIM</p><h2>Comunicação, escuta<br/><em>e propósito social.</em></h2>
-          <p>Sou Maria Clara Andrade França. Trabalho com design gráfico, social media e marketing, incluindo criação de peças visuais, edição de conteúdo, copywriting e comunicação para negócios de diferentes segmentos. Tenho experiência em atendimento, secretaria, atividades administrativas e desenvolvimento comercial.</p>
-          <p>Minha formação reúne estudos em Direito (UNIPÊ), Relações Internacionais (Estácio) e Produção Publicitária (UNIESP), além da formação em Gestão Pública já apresentada neste portfólio. Utilizo Canva Pro, CapCut, pacote Adobe e ferramentas do Microsoft Office. Falo português, inglês e espanhol intermediário.</p>
-        </div>
+        <p>Sou a Maria Clara: especialista em social media, marketing e copywriting, apaixonada por transformar ideias em conexões reais para marcas de diferentes segmentos. Minha bagagem traz experiências nos ramos corporativo e imobiliário — além de cursar gestão pública —, somadas a uma forte vivência em atendimento, suporte administrativo e desenvolvimento comercial. Junto a isso, carrego uma formação múltipla que passa pelo Direito, Relações Internacionais e Produção Publicitária. Gosto de unir escuta atenta, criatividade e estratégia para dar vida a projetos que fazem sentido</p>
+</div>
       </div></section>
       <section className="purpose-section" aria-labelledby="purpose-title"><div className="wrap purpose-layout">
         <div className="purpose-mark"><HeartHandshake size={35} strokeWidth={1.25}/><span>O QUE ME MOVE</span></div>
