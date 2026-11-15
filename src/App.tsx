@@ -58,8 +58,8 @@ function Home() {
         <div className="hero-personal-copy">
           <p className="kicker">MUITO PRAZER, SOU</p>
           <h1>Maria Clara<br/><em>Andrade.</em></h1>
-          <p className="hero-role">Social Media · Copywriting · Comunicação</p>
-          <p className="hero-sub">Atuo com social media, marketing e copywriting. Minha trajetória também passa pelo atendimento ao público, pela área administrativa e pela Polícia Civil, reunindo criatividade, organização e comunicação.</p>
+          <p className="hero-role">Design Gráfico · Social Media · Marketing</p>
+          <p className="hero-sub">Atuo com design gráfico, social media, marketing e copywriting. Minha trajetória também passa pelo atendimento ao público, pela área administrativa e pela Polícia Civil, reunindo criatividade, organização e comunicação.</p>
           <div className="hero-actions"><a className="ctn-btn" href="#sobre">Conheça minha história <ArrowRight size={17}/></a></div>
         </div>
         <div className="hero-personal-visual"><div className="portrait-frame"><img src={`${import.meta.env.BASE_URL}retrato-preto-e-branco.jpeg`} onError={(event) => { event.currentTarget.onerror = null; event.currentTarget.src = `${import.meta.env.BASE_URL}sorriso-frontal.jpeg`; }} alt="Maria Clara Andrade em retrato pessoal preto e branco" loading="eager"/></div><div className="portrait-caption"><span>PORTFÓLIO PESSOAL</span><span>JOÃO PESSOA · PB</span></div></div>
